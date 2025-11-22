@@ -155,10 +155,6 @@ All implementations validated against:
 
 This is an academic project for HiPEAC Student Challenge 2026. Suggestions and improvements welcome!
 
-## 📄 License
-
-[Specify license - e.g., MIT]
-
 ## 👤 Authors
 
 **Mert Karahan- Kübra Holt**
