@@ -175,6 +175,8 @@ void storeCOO(const COO<T>& mat, const char * file)
 
 }
 
+// Commented out - not used in this project
+/*
 template<typename T>
 void spmv(DenseVector<T>& res, const COO<T>& m, const DenseVector<T>& v, bool transpose)
 {
@@ -190,7 +192,7 @@ void spmv(DenseVector<T>& res, const COO<T>& m, const DenseVector<T>& v, bool tr
 
 	std::fill(&res.data[0], &res.data[0] + outsize, 0);
 
-	
+
 	if(transpose)
 		for (size_t i = 0; i < m.nnz; ++i)
 			res.data[m.col_ids[i]] += m.data[i] * v.data[m.row_ids[i]];
@@ -198,6 +200,7 @@ void spmv(DenseVector<T>& res, const COO<T>& m, const DenseVector<T>& v, bool tr
 		for (size_t i = 0; i < m.nnz; ++i)
 			res.data[m.row_ids[i]] += m.data[i] * v.data[m.col_ids[i]];
 }
+*/
 
 
 template void COO<float>::alloc(size_t, size_t, size_t);
@@ -206,5 +209,5 @@ template void COO<double>::alloc(size_t, size_t, size_t);
 template COO<float> loadMTX(const char * file);
 template COO<double> loadMTX(const char * file);
 
-template void spmv(DenseVector<float>& res, const COO<float>& m, const DenseVector<float>& v, bool transpose);
-template void spmv(DenseVector<double>& res, const COO<double>& m, const DenseVector<double>& v, bool transpose);
+// template void spmv(DenseVector<float>& res, const COO<float>& m, const DenseVector<float>& v, bool transpose);
+// template void spmv(DenseVector<double>& res, const COO<double>& m, const DenseVector<double>& v, bool transpose);

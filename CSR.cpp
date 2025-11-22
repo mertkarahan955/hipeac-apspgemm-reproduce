@@ -1,5 +1,6 @@
 #include "CSR.h"
 #include "COO.h"
+#include "Vector.h"
 
 #include <stdint.h>
 #include <string>
@@ -136,6 +137,8 @@ void storeCSR(const CSR<T>& mat, const char * file)
 
 }
 
+// Commented out - not used in this project
+/*
 template<typename T>
 void spmv(DenseVector<T>& res, const CSR<T>& m, const DenseVector<T>& v, bool transpose)
 {
@@ -169,6 +172,7 @@ void spmv(DenseVector<T>& res, const CSR<T>& m, const DenseVector<T>& v, bool tr
 		}
 	}
 }
+*/
 
 template<typename T>
 void convert(CSR<T>& res, const COO<T>& coo)
@@ -220,8 +224,8 @@ template CSR<double> loadCSR(const char * file);
 template void storeCSR(const CSR<float>& mat, const char * file);
 template void storeCSR(const CSR<double>& mat, const char * file);
 
-template void spmv(DenseVector<float>& res, const CSR<float>& m, const DenseVector<float>& v, bool transpose);
-template void spmv(DenseVector<double>& res, const CSR<double>& m, const DenseVector<double>& v, bool transpose);
+// template void spmv(DenseVector<float>& res, const CSR<float>& m, const DenseVector<float>& v, bool transpose);
+// template void spmv(DenseVector<double>& res, const CSR<double>& m, const DenseVector<double>& v, bool transpose);
 
 
 template void convert(CSR<float>& res, const COO<float>& coo);

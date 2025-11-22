@@ -1,5 +1,7 @@
-#include <CUDATools/error.h>
-#include <CUDATools/memory.h>
+// #include <CUDATools/error.h>
+// #include <CUDATools/memory.h>
+#include <cuda_runtime.h>
+#include <stdexcept>
 #include <cuda.h>
 #include <cuda_runtime.h>
 
