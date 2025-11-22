@@ -159,9 +159,9 @@ This is an academic project for HiPEAC Student Challenge 2026. Suggestions and i
 
 [Specify license - e.g., MIT]
 
-## 👤 Author
+## 👤 Authors
 
-**Mert Karahan**
+**Mert Karahan- Kübra Holt**
 - Project: HiPEAC Student Challenge 2026
 - Focus: GPU acceleration of sparse linear algebra
 
