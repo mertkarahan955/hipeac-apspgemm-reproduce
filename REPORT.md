@@ -223,14 +223,13 @@ void transferCSRToDevice(const CSR<float>& h_csr, dCSR<float>& d_csr) {
 ### 4.1 Hardware & Software
 
 **Hardware:**
-- GPU: NVIDIA GPU (CUDA Compute Capability ≥ 6.0)
-- CPU: Multi-core x86-64 processor
+- GPU: NVIDIA GeForce RTX 4050 (6 GB GDDR6, Driver 535.183.01, CUDA 12.6)
+- CPU: AMD Ryzen 5 7640HS 
 
 **Software:**
-- CUDA Toolkit: 12.6
-- Compiler: nvcc + g++ 9.4.0
-- Libraries: cuSPARSE, Thrust
-- OS: Linux (Ubuntu-based)
+- OS: Ubuntu 20.04.6 LTS (Kernel 5.15.0)
+- Compiler: GCC 9.4.0, CMake 3.16.3
+- CUDA Toolkit: 12.6 (nvcc V12.6.20)
 
 ### 4.2 Test Matrices
 
